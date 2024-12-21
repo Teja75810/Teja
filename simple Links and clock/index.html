@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Links Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="clock"></div>
+    </header>
+    <nav>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://in.linkedin.com/" target="_blank">Linkedln</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </nav>
+</header>
+    <script>
+        // Script to display a live clock
+        function updateClock() {
+            const clock = document.getElementById('clock');
+            const now = new Date();
+            clock.textContent = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
